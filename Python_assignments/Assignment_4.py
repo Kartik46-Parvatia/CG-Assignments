@@ -133,7 +133,7 @@
 
 #Q. 17
 
-# temp = int(input("Enter Temprature"))
+# temp = int(input("Enter Temprature in Celsius: "))
 # if temp > 30:
 #     print("Hot")
 # else:
@@ -142,8 +142,101 @@
 
 #Q. 18
 
-bill_amount = int(input("Enter Amount of the Bill"))
-if bill_amount >= 5000:
-    print("Discount Available")
+# bill_amount = int(input("Enter Amount of the Bill: "))
+# if bill_amount >= 5000:
+#     print("Discount Available")
+# else:
+#     print("No Discount")
+
+
+#Q. 19
+
+# marks = int(input("Enter Your Marks: "))
+# if 90 <= marks <= 100:
+#     print("A")
+# elif 80 <= marks <= 89:
+#     print("B")
+# elif 70 <= marks <= 79:
+#     print("C")
+# elif 60 <= marks <= 69:
+#     print("D")
+# else:
+#     print("F")
+
+
+#Q. 20
+
+# temp = int(input("Enter Temperature in Celsius: "))
+# if temp >= 40:
+#     print("Very Hot")
+# elif 30 <= temp <= 39:
+#     print("Hot")
+# elif 20 <= temp <= 29:
+#     print("Warm")
+# else:
+#     print("Cold")
+
+
+#Q. 21
+
+# color = input("Enter Color: ")
+# if color == "red":
+#     print("Stop")
+# elif color == "yellow":
+#     print("Wait")
+# elif color == "green":
+#     print("Go")
+# else:
+#     print("Invalid Signal")
+
+
+#Q. 22
+
+# units = int(input("Enter Units Used: "))
+# if 0 <= units <= 100:
+#     print("Low Usage")
+# elif 101 <= units <= 300:
+#     print("Medium Usage")
+# elif 301 <= units <= 500:
+#     print("High Usage")
+# else:
+#     print("Very High Usage")
+
+
+#Q. 23
+
+# age = int(input("Enter Your Age: "))
+# if age < 5:
+#     print("Free Ticket")
+# elif 5 <= age <= 12:
+#     print("Child Ticket")
+# elif 13 <= age <= 59:
+#     print("Regular Ticket")
+# else:
+#     print("Senior Ticket")
+
+
+#Q. 24
+
+# BMI = float(input("Enter Your Exact Weight: "))
+# if BMI < 18.5:
+#     print("Underweight")
+# elif 18.5 <= BMI <= 24.9:
+#     print("Normal")
+# elif 25 <= BMI <= 29.9:
+#     print("Overweight")
+# else:
+#     print("Obese")
+
+
+#Q. 25
+
+month = int(input("Enter Month Number: "))
+if month in (1, 3, 5, 7, 8, 10, 12):
+    print("31 Days")
+elif month in (4, 6, 9, 11):
+    print("30 Days")
+elif month == 2:
+    print("28 or 29 Days")
 else:
-    print("No Discount")
+    print("Invalid Month")
