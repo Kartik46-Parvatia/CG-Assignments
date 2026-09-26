@@ -231,12 +231,66 @@
 
 #Q. 25
 
-month = int(input("Enter Month Number: "))
-if month in (1, 3, 5, 7, 8, 10, 12):
-    print("31 Days")
-elif month in (4, 6, 9, 11):
-    print("30 Days")
-elif month == 2:
-    print("28 or 29 Days")
-else:
-    print("Invalid Month")
+# month = int(input("Enter Month Number: "))
+# if month in (1, 3, 5, 7, 8, 10, 12):
+#     print("31 Days")
+# elif month in (4, 6, 9, 11):
+#     print("30 Days")
+# elif month == 2:
+#     print("28 or 29 Days")
+# else:
+#     print("Invalid Month")
+
+
+#Q. 26
+
+# num1 = int(input("Enter First Number: "))
+# num2 = int(input("Enter Second Number: "))
+# operator = input("Enter Operator: ")
+
+# if operator == "+":
+#     print(num1 + num2)
+# elif operator == "-":
+#     print(num1 - num2)
+# elif operator == "*":
+#     print(num1 * num2)
+# elif operator == "/":
+#     print(num1 / num2)
+# else:
+#     print("Invalid Operator")
+
+
+#Q. 27
+
+# day = int(input("Enter Number Of Day Of Week: "))
+# if day == 1:
+#     print("Monday")
+# elif day == 2:
+#     print("Tuesday")
+# elif day == 3:
+#     print("Wednesday")
+# elif day == 4:
+#     print("Thrusday")
+# elif day == 5:
+#     print("Friday")
+# elif day == 6:
+#     print("Saturday")
+# elif day == 7:
+#     print("Sunday")
+# else:
+#     print("Invalid Day")
+
+
+#Q. 28
+
+# score = int(input("Enter Your Score: "))
+# if score >= 90:
+#     print("Excellent")
+# elif 75 <= score <= 89:
+#     print("Very Good")
+# elif 60 <= score <= 74:
+#     print("Good")
+# elif 40 <= score <= 59:
+#     print("Average")
+# else:
+#     print("Need Improvement")
