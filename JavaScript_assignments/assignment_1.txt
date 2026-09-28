@@ -1,3 +1,5 @@
+**QUESTIONS AND ANSWERS**
+
 Ques. 6
 
 JavaScript is technically a Just-In-Time (JIT) compiled language, though it is traditionally and practically categorized as an interpreted language.
@@ -28,3 +30,29 @@ The three pillars of front-end web development are HTML, CSS, and JavaScript.
 (1) HTML (HyperText Markup Language): HTML gives content its structure by defining elements like headers, paragraphs, lists, and links.
 (2)  CSS adds visual styling, color, layout, and spacing to make web pages look neat and professional.
 (3) JavaScript: JavaScript introduces dynamic behavior and interactivity, handling user events like clicks, animations, and live data updates.
+
+
+Ques. 11
+
+The frontend is the client-side part of a website or app that users see and interact with directly, while the backend is the server-side infrastructure that handles data, logic, and database operations behind the scenes.
+
+*FRONTEND*-- Definition: The visible part of a website or app that users touch, view, and navigate.
+            Purpose: Ensure a user-friendly, responsive, and visually pleasing experience across all devices.
+            Technologies: HTML, CSS, JavaScript, and frameworks like React, Angular, or Vue.
+            Examples: Buttons, forms, menus, images, and text layouts
+
+*BACKEND*--  Definition: The hidden engine that powers an application, consisting of servers, applications, and databases.
+            Purpose: Process user requests, manage business logic, secure data, and handle storage and retrieval.
+            Technologies: Python, Java, PHP, Ruby, Node.js, and databases like MySQL, PostgreSQL, or MongoDB.
+            Examples: User authentication, payment processing, database updates, and server communication via APIs.
+
+
+Ques. 12
+
+*Node.js* is a free, open-source, cross-platform JavaScript runtime environment that allows developers to execute JavaScript code outside of a web browser.
+Before the creation of Node.js, JavaScript was primarily restricted to running inside web browsers (client-side) to make websites interactive. Node.js shifted this paradigm by enabling JavaScript to run directly on a local machine or server. It is built on Google Chrome's high-performance *V8 JavaScript engine* and natively supports both JavaScript and TypeScript
+
+
+Ques. 13
+
+ECMAScript is a standardized scripting language specification, while JavaScript is the actual programming language that implements it.
