@@ -294,3 +294,39 @@
 #     print("Average")
 # else:
 #     print("Need Improvement")
+
+
+#Q. 29
+
+# marks = int(input("Enter Your Marks: "))
+# attendance = int(input("Enter Your Attendance: "))
+# if marks >= 60 and attendance >= 75:
+#     print("Eligible")
+# else:
+#     print("Not Eligible")
+
+
+#Q. 30
+
+# marks = int(input("Enter Your Marks: "))
+# familyIncome = int(input("Enter Your Family Income: "))
+# if marks >= 85 or familyIncome < 300000:
+#     print("Scholarship Available")
+# else:
+#     print("No Scholarship")
+
+
+#Q. 31
+
+# day = input("Enter Day of the Week: ")
+# if day in ["Monday" , "Tuesday" , "Wednesday" , "Thrusday" , "Friday"]:
+#     print("Weekday")
+# elif day in ["Saturday" , "Sunday"]:
+#     print("Weekend")
+# else:
+#     print("Invalid Day")
+
+
+#Q. 32
+
+username = input("")
