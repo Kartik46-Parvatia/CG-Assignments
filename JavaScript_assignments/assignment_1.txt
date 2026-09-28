@@ -1,0 +1,30 @@
+Ques. 6
+
+JavaScript is technically a Just-In-Time (JIT) compiled language, though it is traditionally and practically categorized as an interpreted language.
+Whether a language is compiled or interpreted depends on its execution engine implementation rather than the language specification itself. Here is how modern JavaScript engines (like Google Chrome's V8) handle your code at runtime.
+
+
+Ques. 7
+
+Google Chrome: Uses the V8 engine
+Mozilla Firefox: Uses the SpiderMonkey engine
+Apple Safari: Uses JavaScriptCore
+
+
+Ques. 8
+
+Dynamic Typing in JavaScript means that the interpreter assigns a data type to a variable at runtime based on its value at that moment, rather than requiring you to explicitly define the type beforehand. In a dynamically typed language, data types are associated with the values themselves, not the variable names.
+
+
+Ques. 9
+
+The main difference between a Static and Dynamic Website is that a static website delivers prebuilt files that look the exact same for every visitor, whereas a dynamic website generates content in real time using databases and server-side code to customize the experience for each user.
+
+
+Ques. 10
+
+The three pillars of front-end web development are HTML, CSS, and JavaScript.
+
+(1) HTML (HyperText Markup Language): HTML gives content its structure by defining elements like headers, paragraphs, lists, and links.
+(2)  CSS adds visual styling, color, layout, and spacing to make web pages look neat and professional.
+(3) JavaScript: JavaScript introduces dynamic behavior and interactivity, handling user events like clicks, animations, and live data updates.
