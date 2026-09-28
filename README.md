@@ -1,11 +1,21 @@
-# CG-Assignments
-Here I will Upload the Assignments given by my sir.
+# 📚 CG-Assignments
 
-Subjects -> 5
-1 - Class_assignments
-2 - Git_Githun Assignments
-3 - HTML_Assignments
-4 - JavaScript_assignments
-5 - Python_assignments
+Welcome to my assignments repository! This space is dedicated to organizing and showcasing all the coursework and assignments provided by my instructor.
 
-Class_assignments is the folder of the work assigned by sir in on-going lecture!!
+## 📂 Subjects & Structure
+
+This repository is divided into **5 core sections**, each containing specific coursework:
+
+*   📝 **[Class Assignments](./Class_assignments)**
+    *Work assigned and completed during ongoing live lectures.*
+*   🐙 **[Git & GitHub Assignments](./Git_Github%20Assignments)**
+    *Version control exercises and GitHub practice.*
+*   🌐 **[HTML Assignments](./HTML_Assignments)**
+    *Web structure and markup projects.*
+*   ⚡ **[JavaScript Assignments](./JavaScript_assignments)**
+    *Scripting and dynamic web behavior tasks.*
+*   🐍 **[Python Assignments](./Python_assignments)**
+    *Python programming and logic building.*
+
+---
+*Happy Coding!* 🚀
