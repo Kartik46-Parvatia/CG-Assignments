@@ -84,3 +84,17 @@ Ans. 7 -- False
 
 Ques. 8 -- React, Angular, and Vue.js are used for Backend development.
 Ans. 8 -- False
+
+
+
+FILL IN THE BLANKS
+
+Ques. 1 JavaScript was created by (Brendan Eich) in the year (1995)
+
+Ques. 2 The three technologies used in Front-end development are (HTML), (CSS), and (JavaScript).
+
+Ques. 3 JavaScript engines: Chrome uses (V8), Firefox uses (SpiderMonkey).
+
+Ques. 4 In the restaurant analogy: Customer = Client (Browser), Waiter = API (or HTTP Request), Chef = Server (Backend).
+
+Ques. 5 JavaScript file extension is .js.
