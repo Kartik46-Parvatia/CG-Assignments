@@ -28,7 +28,7 @@ Ques. 10
 The three pillars of front-end web development are HTML, CSS, and JavaScript.
 
 (1) HTML (HyperText Markup Language): HTML gives content its structure by defining elements like headers, paragraphs, lists, and links.
-(2)  CSS adds visual styling, color, layout, and spacing to make web pages look neat and professional.
+(2) CSS adds visual styling, color, layout, and spacing to make web pages look neat and professional.
 (3) JavaScript: JavaScript introduces dynamic behavior and interactivity, handling user events like clicks, animations, and live data updates.
 
 
@@ -36,12 +36,12 @@ Ques. 11
 
 The frontend is the client-side part of a website or app that users see and interact with directly, while the backend is the server-side infrastructure that handles data, logic, and database operations behind the scenes.
 
-*FRONTEND*-- Definition: The visible part of a website or app that users touch, view, and navigate.
+FRONTEND-- Definition: The visible part of a website or app that users touch, view, and navigate.
             Purpose: Ensure a user-friendly, responsive, and visually pleasing experience across all devices.
             Technologies: HTML, CSS, JavaScript, and frameworks like React, Angular, or Vue.
             Examples: Buttons, forms, menus, images, and text layouts
 
-*BACKEND*--  Definition: The hidden engine that powers an application, consisting of servers, applications, and databases.
+BACKEND--  Definition: The hidden engine that powers an application, consisting of servers, applications, and databases.
             Purpose: Process user requests, manage business logic, secure data, and handle storage and retrieval.
             Technologies: Python, Java, PHP, Ruby, Node.js, and databases like MySQL, PostgreSQL, or MongoDB.
             Examples: User authentication, payment processing, database updates, and server communication via APIs.
@@ -49,10 +49,38 @@ The frontend is the client-side part of a website or app that users see and inte
 
 Ques. 12
 
-*Node.js* is a free, open-source, cross-platform JavaScript runtime environment that allows developers to execute JavaScript code outside of a web browser.
+Node.js is a free, open-source, cross-platform JavaScript runtime environment that allows developers to execute JavaScript code outside of a web browser.
 Before the creation of Node.js, JavaScript was primarily restricted to running inside web browsers (client-side) to make websites interactive. Node.js shifted this paradigm by enabling JavaScript to run directly on a local machine or server. It is built on Google Chrome's high-performance *V8 JavaScript engine* and natively supports both JavaScript and TypeScript
 
 
 Ques. 13
 
 ECMAScript is a standardized scripting language specification, while JavaScript is the actual programming language that implements it.
+
+
+
+TRUE OR FALSE
+
+Ques. 1 -- JavaScript is a statically typed language.
+Ans. 1 -- False
+
+Ques. 2 -- JavaScript can only run inside the browser.
+Ans. 2 -- False
+
+Ques. 3 -- HTML is responsible for the behaviour of a webpage.
+Ans. 3 -- False
+
+Ques. 4 -- Node.js allows JavaScript to run outside the browser.
+Ans. 4 -- True
+
+Ques. 5 -- JavaScript is case-insensitive.
+Ans. 5 -- False
+
+Ques. 6 -- let name and let Name are the same variable.
+Ans. 6 -- False
+
+Ques. 7 -- ECMAScript is a programming language.
+Ans. 7 -- False
+
+Ques. 8 -- React, Angular, and Vue.js are used for Backend development.
+Ans. 8 -- False
