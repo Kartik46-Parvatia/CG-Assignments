@@ -329,4 +329,43 @@
 
 #Q. 32
 
-username = input("")
+username="student"
+password="python123"
+enter_username=input("Enter Username : ")
+enter_password=input("Enter Password : ")
+if username == enter_username :
+    print("Access Granted")
+else:
+    print("Access Denied")
+
+
+# Q33. Delivery Availability
+
+City=input("Enter City Name : ")
+if (City == "Ahmedabad" or City == "Gandhinagar"):
+    print("Access Granted")
+else:
+    print("Access Denied")
+
+
+#Q34. Number Range Check
+
+integer=input("Enter Integer : ")
+if 50 >= integer >= 10 :
+    print("Inside Range")
+else:
+    print("Outside Range")
+
+
+# Q35. Secure Transaction
+
+amount = int(input("Enter Amount : "))
+OTP  = "1234"
+otp = (input("Enter OTP : "))
+if amount <= 50000:
+    if otp == OTP :
+        print("Transaction Approved")
+    else:
+        print("Transaction Declined")
+else:
+    print("Transaction Declined")
