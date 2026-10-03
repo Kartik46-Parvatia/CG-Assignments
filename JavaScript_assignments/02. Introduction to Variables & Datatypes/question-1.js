@@ -1,4 +1,4 @@
-let name="Aditya"
+let name="Kartik"
 let age= 17
 let city="Ahmedabad"
 

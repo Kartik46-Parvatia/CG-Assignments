@@ -1,11 +1,11 @@
-const name = "John";
+const name = "Anthony";
 
 let age = 20;
 age = 25;
 
 if (true) {
-    var city = "Delhi";
-    let country = "India";
+    var city = "Edinburgh";
+    let country = "Europe";
 
     console.log(country);
 }

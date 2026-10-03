@@ -1,4 +1,4 @@
-const studentName = "Aditya"
+const studentName = "Kartik"
 let marks = 70
 const schoolName = "CodingGita"
 
