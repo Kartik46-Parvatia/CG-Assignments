@@ -290,8 +290,8 @@
 // console.log(true !== 1); // true //
 
 // 4) Predict the output:
-console.log("" !== 0); // true //
-console.log(NaN !== NaN); // true //
+// console.log("" !== 0); // true //
+// console.log(NaN !== NaN); // true //
 
 // 5) Write a condition that checks if a variable input is strictly not equal to the string "0".
-console.log()
+// console.log(46 !== 0)
