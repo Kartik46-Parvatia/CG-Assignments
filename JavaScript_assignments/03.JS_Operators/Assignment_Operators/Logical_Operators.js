@@ -157,3 +157,64 @@ console.log(val); // 5 //
 // 10) Predict the output:
 let x = "" || 0 || false || null || undefined || "OK";
 console.log(x); // OK //
+
+
+
+
+// // 3. Logical NOT !
+
+// // Write a JavaScript program for each:
+// // 1. A user is not banned (isBanned = false). Check if they can login by negating isBanned using !.
+// let isBanned = false;
+// let canLogin = !isBanned;
+// console.log(canLogin);
+
+// // 2. A task is not completed (isCompleted = false). Check if it is still pending using !.
+// let isCompleted = false;
+// let isPending = !isCompleted;
+// console.log(isPending);
+
+// // 3. A light is on (isOn = true). Check if it is off using !.
+// let isOn = true;
+// let isOff = !isOn;
+// console.log(isOff);
+
+// // 4. A subscription is not active (isActive = false). Check if the user cannot access premium content using !.
+// let isActive = false;
+// let cannotAccess = !isActive;
+// console.log(cannotAccess);
+
+// // 5. A file is not read-only (isReadOnly = false). Check if it can be edited using !.
+// let isReadOnly = false;
+// let canBeEdited = !isReadOnly;
+// console.log(canBeEdited);
+
+
+// // Additional Questions (Logical NOT !)
+
+// // 1. Predict the output:
+// let a = 0; 
+// let b = 1; 
+// console.log(!a, !b);
+
+// // 2. Predict the output:
+// let x = "Hello"; 
+// let y = ""; 
+// console.log(!x, !y);
+
+// // 3. Predict the output:
+// let val = 5; 
+// let result = !val; 
+// console.log(result);
+
+// // 4. Predict the output:
+// let aVal = 10; 
+// let bVal = 20; 
+// let result4 = !(aVal && bVal); 
+// console.log(result4);
+
+// // 5. Predict the output:
+// let xVal = 0; 
+// let yVal = 1; 
+// let result5 = !(xVal || yVal); 
+// console.log(result5);
