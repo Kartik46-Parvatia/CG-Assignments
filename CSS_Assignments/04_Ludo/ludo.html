@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ludo Board</title>
+  <link rel="stylesheet" href="ludo.css">
+</head>
+<body>
+  <div class="board">
+
+    <!-- Home yards -->
+    <div class="box home red" style="--x:0; --y:0; --w:6; --h:6">
+      <div class="inner">
+        <span class="dot tl"></span><span class="dot tr"></span>
+        <span class="dot bl"></span><span class="dot br"></span>
+      </div>
+    </div>
+
+    <div class="box home green" style="--x:9; --y:0; --w:6; --h:6">
+      <div class="inner">
+        <span class="dot tl"></span><span class="dot tr"></span>
+        <span class="dot bl"></span><span class="dot br"></span>
+      </div>
+    </div>
+
+    <div class="box home blue" style="--x:0; --y:9; --w:6; --h:6">
+      <div class="inner">
+        <span class="dot tl"></span><span class="dot tr"></span>
+        <span class="dot bl"></span><span class="dot br"></span>
+      </div>
+    </div>
+
+    <div class="box home yellow" style="--x:9; --y:9; --w:6; --h:6">
+      <div class="inner">
+        <span class="dot tl"></span><span class="dot tr"></span>
+        <span class="dot bl"></span><span class="dot br"></span>
+      </div>
+    </div>
+
+    <!-- Colored home lanes -->
+    <div class="box green"  style="--x:7; --y:1; --w:1; --h:5"></div>
+    <div class="box blue"   style="--x:7; --y:9; --w:1; --h:5"></div>
+    <div class="box red"    style="--x:1; --y:7; --w:5; --h:1"></div>
+    <div class="box yellow" style="--x:9; --y:7; --w:5; --h:1"></div>
+
+    <!-- Star safe cells -->
+    <div class="box green  star" style="--x:8; --y:1"> ★ </div>
+    <div class="box green  star" style="--x:6; --y:2"> ★ </div>
+    <div class="box blue   star" style="--x:8; --y:11">★</div>
+    <div class="box blue   star" style="--x:6; --y:13">★</div>
+    <div class="box red    star" style="--x:1; --y:6">★</div>
+    <div class="box red    star" style="--x:3; --y:8">★</div>
+    <div class="box yellow star" style="--x:12; --y:6">★</div>
+    <div class="box yellow star" style="--x:13; --y:8">★</div>
+
+    <!-- Center -->
+    <div class="box center" style="--x:6; --y:6; --w:3; --h:3"></div>
+
+  </div>
+</body>
+</html>

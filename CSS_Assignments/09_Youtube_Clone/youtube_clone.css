@@ -1,0 +1,312 @@
+* { 
+    box-sizing: border-box; 
+}
+body { 
+    margin: 0; 
+    background: #181818; 
+    color: #f1f1f1; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 16px; 
+    overflow-x: hidden; 
+}
+.sidebar { 
+    position: fixed; 
+    inset: 0 auto 0 0; 
+    width: 320px; 
+    background: #212121; 
+    z-index: 3; 
+    overflow-y: auto; 
+}
+.brand { 
+    height: 106px; 
+    display: flex; 
+    align-items: center; 
+    gap: 32px; 
+    padding-left: 35px; 
+
+}
+.hamburger { 
+    width: 28px; 
+    height: 28px; 
+    object-fit: contain; 
+}
+.logo { 
+    width: 145px; 
+    height: auto; 
+}
+nav { 
+    border-bottom: 1px solid #3b3b3b; 
+    padding: 0 0 14px; 
+} 
+nav a, .subscriptions a { 
+    height: 55px; 
+    display: flex; 
+    align-items: center; 
+    gap: 32px; 
+    padding: 0 35px; 
+    color: #eee; 
+    text-decoration: none; 
+    white-space: nowrap; 
+}
+nav a img { 
+    width: 32px; 
+    height: 32px; 
+    object-fit: contain; 
+} 
+nav .active { 
+    background: #383838; 
+    font-weight: 700; 
+}
+.nav-library { 
+    padding-top: 14px; 
+}
+.subscriptions { 
+    padding: 26px 0; 
+}
+.subscriptions h2 { 
+    color: #aaa; 
+    font-size: 17px; 
+    margin: 0 0 14px 34px; 
+}
+.subscriptions a { 
+    height: 58px; 
+    gap: 32px; 
+    position: relative; 
+}
+.subscriptions img { 
+    width: 35px; 
+    height: 35px; 
+}
+.subscriptions i { 
+    width: 7px; 
+    height: 7px; 
+    border-radius: 50%; 
+    background: #3ea6ff; 
+    position: absolute; 
+    right: 23px; 
+}
+main { 
+    margin-left: 320px; 
+    min-width: 
+    850px; 
+} 
+header { 
+    height: 80px; 
+    display: flex; 
+    align-items: center; 
+    gap: 25px; 
+    border-bottom: 1px solid #383838; 
+    padding: 0 48px; 
+    background: #181818; 
+    position: sticky; 
+    top: 0; 
+    z-index: 2; 
+}
+.search { 
+    width: min(855px, 55vw); 
+    min-width: 180px; 
+    height: 58px; 
+    display: flex; 
+    margin-left: auto; 
+}
+.search input { 
+    min-width: 0; 
+    flex: 1; 
+    color: #eee; 
+    background: #121212; 
+    border: 1px solid #383838; 
+    border-radius: 3px 0 0 3px; 
+    outline: none; 
+    padding: 0 13px; 
+    font-size: 21px; 
+}
+.search button { 
+    width: 92px; 
+    border: 0; 
+    background: #303030; 
+    border-radius: 0 3px 3px 0; 
+}.search button img { 
+    width: 30px; 
+}
+.icon-button { 
+    border: 0; 
+    background: transparent; 
+    padding: 8px; 
+}
+.icon-button img { 
+    width: 32px; 
+}
+.header-actions { 
+    display: flex; 
+    align-items: center; 
+    gap: 33px; 
+    margin-left: auto; 
+}
+.header-actions > img { 
+    width: 31px; 
+    height: 31px; 
+    object-fit: contain; 
+}
+.header-actions .profile { 
+    width: 45px; 
+    height: 45px; 
+}
+.apps { 
+    font-size: 38px; 
+    line-height: 18px; 
+    transform: rotate(90deg); 
+    letter-spacing: -2px; 
+}
+.chips { 
+    height: 81px; 
+    border-bottom: 1px solid #383838; 
+    display: flex; 
+    align-items: center; 
+    gap: 18px; 
+    padding: 0 24px; 
+    white-space: nowrap; 
+    overflow: hidden; 
+}
+.chips button { 
+    border: 1px solid #4d4d4d; 
+    border-radius: 24px; 
+    padding: 12px 20px; 
+    color: #eee; 
+    background: #383838; 
+    font-size: 16px; 
+}
+.chips .selected { 
+    color: #111; 
+    background: #f4f4f4; 
+    border-color: #f4f4f4; 
+}
+.chips span { 
+    font-size: 42px; 
+    margin-left: auto; 
+}
+.videos { 
+    display: grid; 
+    grid-template-columns: repeat(4, minmax(190px, 1fr)); 
+    gap: 56px 21px; 
+    padding: 32px 35px; 
+    max-width: 1900px; 
+}
+.thumbnail { 
+    display: block; 
+    width: 100%; 
+    aspect-ratio: 242 / 136; 
+    object-fit: cover; 
+}
+.video-info { 
+    display: flex; 
+    gap: 15px; 
+    padding-top: 16px; 
+
+}
+.video-info.no-avatar { 
+    padding-left: 0; 
+}
+.avatar { 
+    width: 42px; 
+    height: 42px; 
+    flex: 0 0 42px; 
+    border-radius: 50%; 
+}
+.video-info h3 { 
+    margin: 0 0 14px; 
+    font-size: 17px; 
+    line-height: 1.3; 
+    font-weight: 700; 
+}
+.video-info p { 
+    color: #aaa; 
+    margin: 0; 
+    font-size: 15px; 
+    line-height: 1.38; 
+}
+.video-info b { 
+    font-size: 12px; 
+    color: #bbb; 
+}
+.right-title { 
+    float: right; 
+    margin-top: 26px; 
+}
+.text-right { 
+    text-align: right; 
+}
+@media (max-width: 1200px) { 
+    .sidebar { 
+        width: 230px; 
+    }
+    .brand { 
+        padding-left: 20px; 
+        gap: 20px; 
+    }
+    .logo { 
+        width: 110px; 
+    } 
+    main { 
+        margin-left: 230px; 
+    }
+    .videos { 
+        grid-template-columns: repeat(3, minmax(200px, 1fr)); 
+    }
+    .header-actions { 
+        gap: 18px; 
+    }
+    .search { 
+        width: 48vw; 
+    }
+    nav a, .subscriptions a { 
+        padding-left: 23px; gap: 21px; 
+    } 
+}
+@media (max-width: 760px) { 
+    .sidebar { 
+        width: 74px; 
+    }
+    .brand { 
+        padding: 0; 
+        justify-content: center; 
+    }
+    .brand .logo, nav a:not(.active)::after, .subscriptions, nav a { 
+        font-size: 0; 
+    }
+    .hamburger { 
+        width: 23px; 
+    } 
+    nav a { 
+        padding: 0; 
+        justify-content: center; 
+    } 
+    nav a img { 
+        width: 26px; 
+    } 
+    main { 
+        margin-left: 74px;
+         min-width: 0; 
+    }
+    .header-actions img:not(.profile), .apps { 
+        display: none; 
+    }
+    .header-actions { 
+        margin-left: 0; 
+    }
+    .search { 
+        width: auto; 
+        flex: 1; 
+    }
+    .videos { 
+        grid-template-columns: repeat(2, minmax(150px, 1fr)); 
+        padding: 22px 15px; 
+        gap: 35px 15px; 
+    }
+    .chips { 
+        padding-left: 14px; 
+        gap: 9px; 
+    }
+    .chips button { 
+        padding: 9px 14px; 
+    } 
+}

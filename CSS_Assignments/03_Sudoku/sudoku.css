@@ -1,0 +1,64 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .board {
+      text-align: center;
+    }
+
+    .board h2 {
+      font-size: 20px;
+      font-weight: 400;
+      letter-spacing: 2px;
+      color: #222;
+      margin-bottom: 24px;
+    }
+
+    table {
+      border-collapse: collapse;
+      border: 2px solid #000;
+    }
+
+    td {
+      width: 42px;
+      height: 42px;
+      border: 1px solid #555;
+      text-align: center;
+      vertical-align: middle;
+      font-size: 22px;
+      color: #222;
+    }
+
+    td:nth-child(3n) {
+      border-right: 2px solid #000;
+    }
+
+    tr:nth-child(3n) td {
+      border-bottom: 2px solid #000;
+    }
+
+    tr:nth-child(-n+3) td:nth-child(n+4):nth-child(-n+6),
+    tr:nth-child(n+4):nth-child(-n+6) td:nth-child(-n+3),
+    tr:nth-child(n+4):nth-child(-n+6) td:nth-child(n+7),
+    tr:nth-child(n+7) td:nth-child(n+4):nth-child(-n+6) {
+      background-color: #a8dbb5;
+    }

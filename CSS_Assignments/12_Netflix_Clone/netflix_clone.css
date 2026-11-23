@@ -1,0 +1,343 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    color: #ffffff;
+    background: #141414;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+a {
+    font: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 68px;
+    padding: 0 4.2%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .76), transparent);
+}
+
+.brand img {
+    display: block;
+    width: 84px;
+    height: auto;
+}
+
+.main-nav {
+    display: flex;
+    gap: 22px;
+    margin-left: 28px;
+    color: #e5e5e5;
+    font-size: 14px;
+}
+
+.main-nav a:hover,
+.main-nav .active {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+    margin-left: auto;
+}
+
+.nav-actions button {
+    display: grid;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    place-items: center;
+}
+
+.nav-actions img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.nav-actions .profile img {
+    width: 32px;
+    height: 32px;
+}
+
+.hero {
+    position: relative;
+    min-height: 690px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .22) 54%, #141414 97%), url("assets/Title-Image.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 110px;
+    left: 4.2%;
+}
+
+.netflix-show {
+    margin: 0 0 12px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.netflix-show span {
+    color: #e50914;
+    font-size: 30px;
+    letter-spacing: 0;
+    vertical-align: -3px;
+}
+
+.hero-title {
+    margin: 0;
+    color: #ffffff;
+    font-size: clamp(74px, 9vw, 130px);
+    font-weight: 800;
+    letter-spacing: -8px;
+    line-height: .88;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.hero-buttons button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 19px;
+    border: 0;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.play-button {
+    color: #111111;
+    background: #ffffff;
+}
+
+.info-button {
+    color: #ffffff;
+    background: rgba(109, 109, 110, .7);
+}
+
+.info-button img {
+    width: 18px;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    margin-top: -25px;
+    padding: 0 4.2%;
+}
+
+.shelf {
+    margin-bottom: 47px;
+}
+
+.shelf h2 {
+    margin: 0 0 14px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.shelf h2 span {
+    font-size: 30px;
+    line-height: 12px;
+    vertical-align: -2px;
+}
+
+.card-row {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 15px;
+}
+
+.landscape > img {
+    display: block;
+    width: 100%;
+    border-radius: 3px;
+    transition: transform .2s ease;
+}
+
+.landscape > img:hover {
+    position: relative;
+    z-index: 2;
+    transform: scale(1.06);
+}
+
+.ranked {
+    gap: 14px;
+}
+
+.ranked article {
+    position: relative;
+    height: 205px;
+}
+
+.rank {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: auto;
+    height: 100%;
+    opacity: .8;
+}
+
+.poster {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    width: 57%;
+    max-height: 100%;
+    border-radius: 3px;
+    object-fit: cover;
+}
+
+.footer {
+    width: min(800px, 88%);
+    margin: 65px auto 24px;
+    color: #808080;
+    font-size: 13px;
+}
+
+.social-links {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 20px;
+}
+
+.social-links img {
+    width: 22px;
+    opacity: .75;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px 32px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.service-code {
+    margin-top: 24px;
+    padding: 8px 10px;
+    border: 1px solid #808080;
+    color: #808080;
+    background: transparent;
+    font-size: 13px;
+}
+
+.footer p {
+    margin-top: 22px;
+    font-size: 11px;
+}
+
+@media (max-width: 760px) {
+    .navbar {
+        height: 58px;
+        padding: 0 5%;
+    }
+
+    .brand img {
+        width: 72px;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .nav-actions {
+        gap: 12px;
+    }
+
+    .nav-actions button:nth-child(2),
+    .nav-actions button:nth-child(3) {
+        display: none;
+    }
+
+    .hero {
+        min-height: 510px;
+        background-position: 57% top;
+    }
+
+    .hero-content {
+        bottom: 80px;
+        left: 5%;
+    }
+
+    .hero-title {
+        font-size: 76px;
+    }
+
+    .content {
+        padding: 0 5%;
+    }
+
+    .shelf {
+        margin-bottom: 34px;
+    }
+
+    .shelf h2 {
+        font-size: 16px;
+    }
+
+    .card-row {
+        display: flex;
+        gap: 10px;
+        overflow-x: auto;
+        padding-bottom: 8px;
+        scrollbar-width: none;
+    }
+
+    .card-row::-webkit-scrollbar {
+        display: none;
+    }
+
+    .landscape > img {
+        width: 180px;
+        flex: 0 0 180px;
+    }
+
+    .ranked article {
+        width: 132px;
+        min-width: 132px;
+        height: 185px;
+    }
+
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

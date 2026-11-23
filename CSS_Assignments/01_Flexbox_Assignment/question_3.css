@@ -1,0 +1,32 @@
+.dashboard {
+  display: flex;
+  width: 1000px; /* At 700px the main panel adjusted its width to fit into the container */
+  height: 400px;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+}
+
+.sidebar {
+  flex: 0 0 200px;
+  width: 200px;
+  background: #ddd;
+}
+
+.main-content {
+  flex: 1 1 200px;
+  width: 200px;
+  background: #e8f0ff;
+  min-width: 0;
+}
+
+.activity-panel {
+  flex: 0 0 250px;
+  width: 250px;
+  background: #eee;
+  align-self: flex-start;
+}
+
+.dashboard > * {
+  padding: 15px;
+}

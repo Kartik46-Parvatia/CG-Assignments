@@ -1,0 +1,245 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #0b1018;
+      font-family: "Poppins", Arial, Helvetica, sans-serif;
+    }
+
+    /* Stadium background */
+    .stadium {
+      position: relative;
+      width: 1000px;
+      max-width: 100%;
+      height: 560px;
+      overflow: hidden;
+      border-radius: 6px;
+      background:
+        linear-gradient(to bottom, #13233d 0%, #1b2f4a 40%, #2b3f4f 52%, #3e6b2a 53%, #1d4a1a 75%, #0f2a10 100%);
+    }
+
+    /* Dark stands on the sides */
+    .stadium::before {
+      content: "";
+      position: absolute;
+      top: 190px;
+      left: 0;
+      right: 0;
+      height: 200px;
+      background: linear-gradient(to right, #1a2430 0%, #111822 30%, #111822 70%, #1a2430 100%);
+      opacity: 0.85;
+    }
+
+    /* Boundary rope */
+    .stadium::after {
+      content: "";
+      position: absolute;
+      left: -10%;
+      right: -10%;
+      top: 370px;
+      height: 26px;
+      border-radius: 50%;
+      background: linear-gradient(to bottom, #c9ccd0, #8e949b);
+      opacity: 0.8;
+    }
+
+    /* Logo */
+    .logo {
+      position: absolute;
+      top: 28px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: #ffffff;
+      font-weight: 800;
+      line-height: 0.95;
+      letter-spacing: 0.5px;
+      z-index: 2;
+    }
+
+
+    .logo-icon::before {
+      content: "";
+      position: absolute;
+      left: 8px;
+      top: 0;
+      width: 6px;
+      height: 30px;
+      border-radius: 3px;
+      background: #ffffff;
+      transform: rotate(20deg);
+    }
+
+    .logo-icon::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #ffffff;
+    }
+
+    .logo-text {
+      font-size: 20px;
+      text-align: left;
+    }
+
+    /* Team cards */
+    .teams {
+      position: absolute;
+      top: 138px;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      gap: 70px;
+      z-index: 2;
+    }
+
+    .team {
+      width: 320px;
+      height: 256px;
+      border-radius: 14px;
+      color: #ffffff;
+      text-align: center;
+      padding-top: 30px;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+    }
+
+    .team.ind {
+      background: #1d5bb2;
+    }
+
+    .team.pak {
+      background: #4aa52e;
+    }
+
+    .team h1 {
+      font-size: 68px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      line-height: 1;
+      margin-bottom: 26px;
+    }
+
+    .balls {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 22px;
+    }
+
+    .ball {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: #ffffff;
+      color: #111111;
+      font-size: 20px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+    }
+
+    .score {
+      font-size: 38px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    /* Buttons */
+    .actions {
+      position: absolute;
+      top: 448px;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      z-index: 2;
+    }
+
+    .btn {
+      width: 70px;
+      height: 70px;
+      border: none;
+      border-radius: 14px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 5px 0 rgba(0, 0, 0, 0.25), 0 8px 14px rgba(0, 0, 0, 0.35);
+      transition: transform 0.1s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn:active {
+      transform: translateY(3px);
+      box-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    .btn.bat {
+      background: linear-gradient(to bottom, #ffc84a, #f2a11b);
+      border: 2px solid #ffd978;
+    }
+
+    .btn.reset {
+      background: linear-gradient(to bottom, #ef4a3e, #c9251b);
+      border: 2px solid #ff7a70;
+    }
+
+    /* Bat icon */
+    .bat-icon {
+      position: relative;
+      width: 10px;
+      height: 42px;
+      background: #ffffff;
+      border-radius: 5px 5px 4px 4px;
+      transform: rotate(40deg);
+    }
+
+    .bat-icon::before {
+      content: "";
+      position: absolute;
+      top: -18px;
+      left: -4px;
+      width: 18px;
+      height: 20px;
+      background: #ffffff;
+      border-radius: 4px;
+    }
+
+    .bat-icon::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: -3px;
+      width: 16px;
+      height: 6px;
+      background: #ffffff;
+      border-radius: 3px;
+    }
+
+    /* Reset icon */
+    .reset-icon {
+      color: #ffffff;
+      font-size: 40px;
+      font-weight: 800;
+      line-height: 1;
+    }

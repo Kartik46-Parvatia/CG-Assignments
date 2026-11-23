@@ -1,0 +1,327 @@
+:root { --sidebar: 300px; --player: 114px; --green: #1ed760; }
+* { 
+    box-sizing: border-box; 
+}
+body { 
+    margin: 0; 
+    background: #121212; 
+    color: #fff; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: 600; 
+    overflow: hidden; 
+}
+a { 
+    color: inherit; 
+    text-decoration: none; 
+}
+.sidebar { 
+    position: fixed; 
+    z-index: 2; 
+    width: var(--sidebar); 
+    top: 0; 
+    bottom: 0; 
+    padding: 30px 10px 16px; 
+    background: #000; 
+    display: flex; 
+    flex-direction: column; 
+}
+.logo { 
+    width: 164px; 
+    height: auto; 
+    margin: 1px 20px 30px; 
+}
+.main-nav, .playlist-nav { 
+    display: grid; 
+    gap: 4px; 
+}
+.main-nav a, .playlist-nav a { 
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+    height: 50px; 
+    padding: 0 20px; 
+    border-radius: 6px; 
+    font-size: 17px; 
+}
+.main-nav .active { 
+    background: #292929; 
+}
+.main-nav img { 
+    width: 28px; 
+    height: 28px; 
+    object-fit: contain; 
+    filter: brightness(0) invert(1); 
+}
+.playlist-nav { 
+    margin-top: 32px; 
+}
+.playlist-nav img { 
+    height: 30px; 
+    width: 30px; 
+    object-fit: contain; 
+}
+.playlist-links { 
+    display: grid; 
+    gap: 18px; 
+    margin: 31px 20px; 
+    font-size: 16px; 
+}
+.install { 
+    margin: auto 20px 0; 
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+    font-size: 16px; 
+}
+.install img { 
+    width: 28px; 
+    height: 28px; 
+    filter: brightness(0) invert(1); 
+}
+main { 
+    margin-left: var(--sidebar); 
+    height: calc(100vh - var(--player) - 30px); 
+    min-height: 530px; 
+    overflow: auto; 
+    background: linear-gradient(180deg, #222 0, #121212 43%); 
+}
+header { 
+    height: 101px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    padding: 20px 40px; 
+}
+.arrows { 
+    width: 104px; 
+    height: 42px; 
+    object-fit: contain; 
+    object-position: left; 
+}
+.user { 
+    width: 147px; 
+    height: 41px; 
+    object-fit: contain; 
+}
+.content { 
+    padding: 0 40px 35px; 
+}
+h1 { 
+    margin: 11px 0 28px; 
+    font-size: 38px; 
+    letter-spacing: -.7px; 
+}
+.quick-grid { 
+    display: grid; 
+    grid-template-columns: repeat(4, minmax(180px, 1fr)); 
+    gap: 20px 29px; 
+}
+.quick-card { 
+    height: 100px; 
+    background: #2d2d2d; 
+    display: flex; 
+    align-items: center; 
+    border-radius: 4px; 
+    overflow: hidden; 
+    font-size: 18px; 
+    transition: background .2s; 
+}
+.quick-card:hover { 
+    background: #3e3e3e; 
+}
+.quick-card img { 
+    width: 100px; 
+    height: 100px; 
+    object-fit: cover; 
+}
+.quick-card span { 
+    padding-left: 21px; 
+    line-height: 25px; 
+}
+.section-heading { 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    margin: 51px 4px 28px 0; 
+}
+.section-heading h2 { 
+    margin: 0; 
+    font-size: 28px; 
+    letter-spacing: -.7px; 
+}
+.section-heading a { 
+    color: #bbb; 
+    font-size: 14px; 
+    letter-spacing: 1px; 
+}
+.show-grid { 
+    display: grid; 
+    grid-template-columns: repeat(6, minmax(170px, 1fr)); 
+    gap: 29px; 
+}
+.show-card { 
+    background: #191919; 
+    padding: 20px; 
+    min-width: 0; 
+}
+.show-card img { 
+    width: 100%; 
+    aspect-ratio: 1; 
+    object-fit: cover; 
+    border-radius: 13px; 
+}
+.show-card h3 { 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+    overflow: hidden; 
+    margin: 25px 0 7px; 
+    font-size: 18px; 
+}
+.show-card p {
+    margin: 0; 
+    color: #b3b3b3; 
+    font-size: 14px; 
+    font-weight: 400; 
+}
+.player { 
+    position: fixed; 
+    z-index: 3; 
+    bottom: 30px; 
+    left: 0; 
+    right: 0; 
+    height: var(--player); 
+    background: #181818; 
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; 
+    padding: 18px 20px; 
+}
+.now-playing { 
+    width: 310px; 
+    display: flex; 
+    align-items: center; 
+    gap: 18px; 
+}
+.now-playing img { 
+    width: 70px; 
+    height: 70px; 
+    object-fit: cover; 
+}
+.now-playing strong { 
+    display: block; 
+    font-size: 16px; 
+}
+.now-playing small { 
+    display: block; 
+    color: #b3b3b3; 
+    margin-top: 4px; 
+}
+.green-heart { 
+    color: #1db954; 
+    font-size: 24px; 
+    margin-left: auto; 
+}
+.controls { 
+    width: min(640px, 44vw); 
+}
+.buttons { 
+    display: flex; 
+    height: 47px; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 26px; 
+    color: #bbb; 
+}
+.buttons button { 
+    border: 0; 
+    width: 42px; 
+    height: 42px; 
+    border-radius: 50%; 
+    background: #fff; 
+    color: #111; 
+    font-size: 16px; 
+    padding-left: 5px; 
+}
+.timeline { 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    color: #bbb; 
+    font-size: 12px; 
+}
+.timeline div { 
+    height: 4px; 
+    background: #555; 
+    border-radius: 4px; 
+    flex: 1; 
+}
+.timeline i { 
+    display: block; 
+    width: 88%; 
+    height: 100%; 
+    background: #ccc; 
+    border-radius: inherit; 
+}
+.player-options { 
+    width: 290px; 
+    height: auto; 
+    object-fit: contain; 
+    object-position: right; 
+}
+.listening { 
+    position: fixed; 
+    z-index: 4; 
+    bottom: 0; 
+    height: 30px; 
+    left: 0; 
+    right: 0; 
+    background: var(--green); 
+    color: #050505; 
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-end; 
+    padding-right: 130px; 
+    font-size: 16px; 
+    letter-spacing: .2px; 
+}
+@media (max-width: 1250px) { 
+    .quick-grid { 
+        grid-template-columns: repeat(3, 1fr); 
+    }
+    .show-grid { 
+        grid-template-columns: repeat(4, 1fr); 
+    }
+    .show-card:nth-child(n+5) { 
+        display: none; 
+    } 
+}
+@media (max-width: 850px) { 
+    :root { 
+        --sidebar: 220px; 
+    }
+    .sidebar { 
+        padding-top: 20px; 
+    }
+    .main-nav a, .playlist-nav a { 
+        gap: 12px; padding: 0 12px; 
+    }
+    .quick-grid { 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    .content, header { 
+        padding-left: 24px; 
+        padding-right: 24px; 
+    }
+    .show-grid { 
+        grid-template-columns: repeat(3, 1fr); 
+    }
+    .player-options { 
+        display: none; 
+    }
+    .now-playing { 
+        width: 230px; 
+    }
+    .listening { 
+        padding-right: 20px; 
+    } 
+}

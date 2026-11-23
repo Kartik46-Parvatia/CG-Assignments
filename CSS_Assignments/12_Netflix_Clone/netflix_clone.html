@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="netflix_clone.css">
+</head>
+<body>
+    <header class="navbar">
+        <a class="brand" href="#hero" aria-label="Netflix home">
+            <img src="assets/NetflixLogoSvg.png" alt="Netflix">
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+            <a class="active" href="#hero">Start</a>
+            <a href="#shows">Shows</a>
+            <a href="#movies">Movies</a>
+            <a href="#new">New</a>
+            <a href="#my-list">My List</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button aria-label="Search"><img src="assets/Search.png" alt=""></button>
+            <button aria-label="Gift"><img src="assets/GiftBox.png" alt=""></button>
+            <button aria-label="Notifications"><img src="assets/NotificationBell.png" alt=""></button>
+            <button class="profile" aria-label="Profile"><img src="assets/ProfileIMG.png" alt="Profile"></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <p class="netflix-show"><span>N</span> SHOW</p>
+                <h1 class="hero-title">MAID</h1>
+                <div class="hero-buttons">
+                    <button class="play-button"><span aria-hidden="true">▶</span> Play</button>
+                    <button class="info-button"><img src="assets/Detail.png" alt=""> More info</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="content">
+            <section class="shelf" id="shows">
+                <h2>See again <span>›</span></h2>
+                <div class="card-row landscape">
+                    <img src="assets/section 1.1.png" alt="You">
+                    <img src="assets/section 1.2.png" alt="Snowpiercer">
+                    <img src="assets/section 1.3.png" alt="The Universe">
+                    <img src="assets/section 1.4.png" alt="The Last Kingdom">
+                    <img src="assets/section 1.5.png" alt="Money Heist">
+                </div>
+            </section>
+
+            <section class="shelf top-ten" id="movies">
+                <h2>Top 10 in your country <span>›</span></h2>
+                <div class="card-row ranked">
+                    <article><img class="rank" src="assets/Rank - 01.png" alt="Rank 1"><img class="poster" src="assets/section 2.1.png" alt="Red Notice"></article>
+                    <article><img class="rank" src="assets/Rank - 02.png" alt="Rank 2"><img class="poster" src="assets/section 2.2.png" alt="Jason Bourne"></article>
+                    <article><img class="rank" src="assets/Rank - 03.png" alt="Rank 3"><img class="poster" src="assets/section 2.3.png" alt="Squid Game"></article>
+                    <article><img class="rank" src="assets/Rank - 04.png" alt="Rank 4"><img class="poster" src="assets/section 2.4.png" alt="Central Intelligence"></article>
+                    <article><img class="rank" src="assets/Rank - 05.png" alt="Rank 5"><img class="poster" src="assets/section 2.5.png" alt="Hellbound"></article>
+                </div>
+            </section>
+
+            <section class="shelf" id="new">
+                <h2>Trending now <span>›</span></h2>
+                <div class="card-row landscape">
+                    <img src="assets/section 3.1.png" alt="Explained">
+                    <img src="assets/section 3.2.png" alt="Into the Night">
+                    <img src="assets/section 3.3.png" alt="Locke and Key">
+                    <img src="assets/section 3.4.png" alt="The Queen's Gambit">
+                    <img src="assets/section 3.5.png" alt="Crown">
+                </div>
+            </section>
+
+            <section class="shelf" id="my-list">
+                <h2>Sci-fi shows <span>›</span></h2>
+                <div class="card-row landscape">
+                    <img src="assets/section 4.1.png" alt="Altered Carbon">
+                    <img src="assets/section 4.2.png" alt="Another Life">
+                    <img src="assets/section 4.3.png" alt="The Umbrella Academy">
+                    <img src="assets/section 4.4.png" alt="Sense8">
+                    <img src="assets/section 4.5.png" alt="The Rain">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="social-links">
+            <a href="#" aria-label="Facebook"><img src="assets/facebook.png" alt=""></a>
+            <a href="#" aria-label="Instagram"><img src="assets/instagram.png" alt=""></a>
+            <a href="#" aria-label="Twitter"><img src="assets/twitter.png" alt=""></a>
+            <a href="#" aria-label="YouTube"><img src="assets/youtube.png" alt=""></a>
+        </div>
+        <div class="footer-links">
+            <a href="#">Seslendirme ve Alt Yazı</a><a href="#">Sesli Betimleme</a><a href="#">Yardım Merkezi</a><a href="#">Hediye Kartları</a>
+            <a href="#">Medya Merkezi</a><a href="#">Yatırımcı İlişkileri</a><a href="#">İş İmkanları</a><a href="#">Kullanım Koşulları</a>
+            <a href="#">Gizlilik</a><a href="#">Yasal Hükümler</a><a href="#">Çerez Tercihleri</a><a href="#">Kurumsal Bilgiler</a>
+            <a href="#">Bize Ulaşın</a>
+        </div>
+        <button class="service-code">Hizmet Kodu</button>
+        <p>© 1997-2021 Netflix, Inc. {i-062d573a0ee099242}</p>
+    </footer>
+</body>
+</html>

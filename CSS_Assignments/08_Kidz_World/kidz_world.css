@@ -1,0 +1,106 @@
+* { 
+  box-sizing: border-box; 
+}
+
+body { 
+  margin: 0; color: #111; background: #fff; font-family: Arial, Helvetica, sans-serif;
+}
+
+.topbar { 
+  height: 38px; display: flex; align-items: center; justify-content: space-between; padding: 0 64px; 
+}
+.logo { 
+  width: 121px; height: auto; 
+}
+.cart-summary { 
+  display: flex; align-items: center; gap: 4px; font-size: 12px; font-weight: 700; 
+}
+.cart-summary img { 
+  width: 25px; height: auto; 
+}
+
+.hero { 
+  height: 357px; background: url("assets/kw-background.png") center / cover no-repeat; position: relative; 
+}
+.hero-copy { 
+  position: absolute; left: max(5%, calc((100% - 1152px) / 2)); top: 59px; color: #fff; 
+}
+.hero h1 { 
+  margin: 0; font-family: Georgia, 'Times New Roman', serif; font-size: 55px; line-height: 1.31; font-weight: 700; letter-spacing: -1.5px; 
+}
+.hero p { 
+  margin: 15px 0 0; font-size: 16px; font-weight: 700; 
+}
+
+main { 
+  max-width: 1152px; margin: 0 auto; 
+}
+.catalogue h2 { 
+  margin: 0 0 7px; font: bold 20px Georgia, 'Times New Roman', serif; 
+}
+.books-section { 
+  padding-top: 137px; 
+}
+.games-section { 
+  padding-top: 134px; 
+}
+.handmade-section { 
+  padding: 133px 0 122px; 
+}
+.product-grid { 
+  display: grid; 
+}
+.books-grid { 
+  grid-template-columns: repeat(6, 1fr); column-gap: 45px; 
+}
+.four-grid { 
+  grid-template-columns: repeat(4, 1fr); column-gap: 76px; 
+}
+.product { 
+  min-width: 0; 
+}
+.product > img { 
+  display: block; width: 100%; height: auto; border-radius: 7px; 
+}
+.book > img { 
+  border-radius: 7px; 
+}
+.product h3 { 
+  margin: 5px 0 0; font-size: 15px; line-height: 18px; font-weight: 700; white-space: nowrap; 
+}
+.product p { 
+  margin: 7px 0 0; min-height: 17px; color: #888; font-size: 12px; line-height: 15px; white-space: nowrap; 
+}
+.buy { 
+  margin-top: 8px; display: flex; align-items: center; justify-content: space-between; 
+}
+.buy strong { 
+  font-size: 16px; 
+}
+button { 
+  display: flex; align-items: center; gap: 3px; border: 0; border-radius: 3px; background: #6298f3; color: #fff; padding: 4px 4px 4px 5px; font-size: 13px; font-weight: 700; line-height: 18px; cursor: pointer; 
+}
+button img { 
+  width: 14px; height: 14px; object-fit: contain; 
+}
+
+@media (max-width: 900px) {
+  .topbar { padding: 0 28px; }
+  main { width: min(90%, 600px); }
+  .books-grid, .four-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 34px 28px; }
+  .books-section, .games-section, .handmade-section { padding-top: 70px; }
+  .handmade-section { padding-bottom: 70px; }
+  .hero { height: 330px; background-position: 62% center; }
+  .hero-copy { left: 7%; top: 55px; }
+  .hero h1 { font-size: 45px; }
+}
+
+@media (max-width: 500px) {
+  .topbar { padding: 0 16px; }
+  .hero { height: 285px; background-position: 67% center; }
+  .hero h1 { font-size: 37px; }
+  .hero-copy { top: 48px; }
+  .cart-summary { font-size: 11px; }
+  .books-grid, .four-grid { grid-template-columns: 1fr; }
+  .product h3, .product p { white-space: normal; }
+}

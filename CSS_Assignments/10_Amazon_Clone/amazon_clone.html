@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon Clone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="amazon_clone.css">
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <a class="brand" href="#"><img src="assets/logo.png" alt="Amazon India"></a>
+      <a class="address" href="#"><img src="assets/location.png" alt=""><span>Hello<br><strong>Select your address</strong></span></a>
+
+      <form class="search" role="search">
+        <select aria-label="Search category"><option>All</option></select>
+        <input type="search" aria-label="Search Amazon" placeholder="Search Amazon.in">
+        <button aria-label="Search"><img src="assets/search icon.png" alt=""></button>
+      </form>
+
+      <button class="language" aria-label="Choose language"><img src="assets/indian flag.png" alt="India"><img class="chevron" src="assets/down arrow.png" alt=""></button>
+      <a class="nav-link" href="#">Hello, Sign in<br><strong>Account &amp; Lists</strong></a>
+      <a class="nav-link returns" href="#">Returns<br><strong>&amp; Orders</strong></a>
+      <a class="cart" href="#"><img src="assets/cart icon.png" alt=""><strong>Cart</strong></a>
+    </div>
+
+    <nav class="menu" aria-label="Main navigation">
+      <a href="#"><img src="assets/ham burger icon.png" alt=""> All</a>
+      <a href="#">Best Sellers</a><a href="#">Mobiles</a><a href="#">Customer Service</a>
+      <a href="#">Today's Deals</a><a href="#">Fashion</a><a href="#">Electronics</a>
+      <a href="#">Books</a><a href="#">Prime⌄</a><a href="#">New Releases</a>
+      <a href="#">Home &amp; Kitchen</a><a href="#">Amazon Pay</a>
+      <a class="prime-day" href="#"><img src="assets/lion.png" alt=""><span>prime day<br><small>23<sup>rd</sup>-24<sup>th</sup> July</small></span><img src="assets/top bar right.png" alt=""></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Featured products">
+      <button class="slider-arrow left" aria-label="Previous slide"><img src="assets/left arrow.png" alt=""></button>
+      <button class="slider-arrow right" aria-label="Next slide"><img src="assets/right arrow.png" alt=""></button>
+    </section>
+
+    <section class="cards">
+      <article class="card grid-card">
+        <h2>Upgrade your home | Amazon<br>Brands &amp; more</h2>
+        <div class="product-grid">
+          <a href="#"><img src="assets/image 17.png" alt="Smart television"><span>Smart LED TVs</span></a>
+          <a href="#"><img src="assets/image 18.png" alt="Appliances"><span>Appliances</span></a>
+          <a href="#"><img src="assets/image 19.png" alt="Furniture"><span>Furniture</span></a>
+          <a href="#"><img src="assets/image 20.png" alt="Kitchen products"><span>Kitchen products</span></a>
+        </div>
+        <a class="card-link" href="#">Shop now</a>
+      </article>
+
+      <article class="card grid-card blush">
+        <h2>Revamp your home in style</h2>
+        <div class="product-grid">
+          <a href="#"><img src="assets/image 21.png" alt="Bedsheets and curtains"><span>Bedsheets, curtains &amp; more</span></a>
+          <a href="#"><img src="assets/image 22.png" alt="Home decoration"><span>Home decoration</span></a>
+          <a href="#"><img src="assets/image 24.png" alt="Home storage"><span>Home storage</span></a>
+          <a href="#"><img src="assets/image 25.png" alt="Lighting solutions"><span>Lighting solutions</span></a>
+        </div>
+        <a class="card-link" href="#">Explore all</a>
+      </article>
+
+      <article class="card large-card blush">
+        <h2>Up to 70% off | Clearance store</h2>
+        <img src="assets/image 26.png" alt="Electronics on clearance">
+        <a class="card-link" href="#">See more</a>
+      </article>
+
+      <div class="side-column">
+        <article class="signin card">
+          <h2>Sign in for your best<br>experience</h2>
+          <a href="#">Sign in securely</a>
+        </article>
+        <article class="ad-card"><img src="assets/image 28.png" alt="Laptops from top brands"></article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,97 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Each grid cell is --c wide and tall */
+    .board {
+      --c: 32px;
+      position: relative;
+      width: calc(15 * var(--c));
+      height: calc(15 * var(--c));
+      background-color: #ffffff;
+      background-image:
+        linear-gradient(to right, #9a9a9a 1px, transparent 1px),
+        linear-gradient(to bottom, #9a9a9a 1px, transparent 1px);
+      background-size: var(--c) var(--c);
+      border: 1px solid #ff0000;
+    }
+
+    /* Any positioned block placed on the 15x15 grid */
+    .box {
+      position: absolute;
+      left: calc(var(--x) * var(--c));
+      top: calc(var(--y) * var(--c));
+      width: calc(var(--w, 1) * var(--c));
+      height: calc(var(--h, 1) * var(--c));
+    }
+
+    /* Colors */
+    .red    { background-color: #ff0000; }
+    .green  { background-color: #008000; }
+    .blue   { background-color: #0000ff; }
+    .yellow { background-color: #ffff00; }
+
+    /* Home yards (6x6 corners) */
+    .home {
+      color: currentColor;
+    }
+    .home.red    { color: #ff0000; }
+    .home.green  { color: #008000; }
+    .home.blue   { color: #0000ff; }
+    .home.yellow { color: #ffff00; }
+
+    .inner {
+      position: absolute;
+      left: var(--c);
+      top: var(--c);
+      width: calc(4 * var(--c));
+      height: calc(4 * var(--c));
+      background-color: #ffffff;
+    }
+
+    /* Circles inside each home */
+    .dot {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border: 2px solid currentColor;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .dot.tl { left: 25%; top: 25%; }
+    .dot.tr { left: 75%; top: 25%; }
+    .dot.bl { left: 25%; top: 75%; }
+    .dot.br { left: 75%; top: 75%; }
+
+    /* Center triangles */
+    .center {
+      background: conic-gradient(
+        #008000 0deg 45deg,
+        #ffff00 45deg 135deg,
+        #0000ff 135deg 225deg,
+        #ff0000 225deg 315deg,
+        #008000 315deg 360deg
+      );
+    }
+
+    /* Star cells */
+    .star {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #000000;
+      font-size: 22px;
+      line-height: 1;
+      border: 1px solid #333;
+    }
